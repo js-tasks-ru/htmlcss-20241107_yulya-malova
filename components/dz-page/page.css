@@ -7,3 +7,32 @@
 .page__main {
     flex-grow: 1;
 }
+
+.page_inner {
+    background: #F9FAFC;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+            'header header'
+            'sidebar template'
+            'footer footer';
+}
+
+.page__header {
+    padding-bottom: 36px;
+    background-color: transparent;
+    grid-area: header;
+}
+
+.page__sidebar {
+    grid-area: sidebar;
+}
+
+.page__template {
+    grid-area: template;
+}
+
+.page__footer {
+    grid-area: footer;
+ }
