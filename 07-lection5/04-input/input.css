@@ -1,0 +1,87 @@
+.input {
+    display: inline-block;
+    font-family: 'Inter' sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+}
+
+.input__wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.input__control {
+    width: 350px;
+    height: 56px;
+    border: 1px solid #DDE2E5;
+    border-radius: 8px;
+    outline: none;
+    padding-left: 24px;
+    padding-right: 40px;
+}
+
+.input__control:focus {
+    border: 1px solid #4263EB;
+    box-shadow: 0px 1px 1px 0px #339AF01A;
+}
+
+.input__success {
+    border: 1px solid #374FC7;
+}
+
+.input__success:focus {
+    border: 1px solid #374FC7;
+}
+
+.input__invalid {
+    border: 1px solid #F03D3E;
+    box-shadow: 0px 1px 1px 0px #F03D3E1A;
+}
+
+.input__invalid:focus {
+    border: 1px solid #F03D3E;
+    box-shadow: 0px 1px 1px 0px #F03D3E1A;
+}
+
+.input::placeholder {
+    color: #AAAAAA;
+}
+
+.input__invalid::placeholder, .input__success::placeholder {
+    color: #495057;
+}
+
+.input__icon {
+    display: none;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+}
+
+.input__icon_succes {
+    display: block;
+    color: #374FC7;
+}
+
+.input__icon_error {
+    display: block;
+    color: #F03D3E;
+}
+
+.input__text {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #ACB5BD;
+    text-transform: uppercase;
+}
